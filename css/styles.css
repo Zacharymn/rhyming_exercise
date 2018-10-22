@@ -50,7 +50,6 @@ main {
 	border-radius: 8px;
 	box-shadow: -5px -5px 10px #999;
 
-	height: 25%;
 }
 
 .stuff {
@@ -61,10 +60,19 @@ main {
 
 }
 
+.rhyme h3 {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+}
+
 .rhyme {
 	display: flex;
+	flex-wrap: wrap;
 	width: 25%;
-	height: 30vh;
+	height: 220px;
+/*	height: 30vh;*/
 	border-right: 10px solid #0af;
 }
 
@@ -80,6 +88,7 @@ main {
 	width: 140px;
 	height: 140px;
 	margin: auto;
+
 	display: flex;
 	flex-wrap: wrap;
 	cursor: pointer;
