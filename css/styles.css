@@ -81,6 +81,7 @@ main {
 	height: 140px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	cursor: pointer;
 	box-shadow: -5px -5px 10px #999;
 
@@ -100,6 +101,7 @@ main {
 	height: 140px;
 	background: #42f4d9;
 	display: flex;
+	flex-wrap: wrap;
 	position: absolute;
 	/*transition: transform 300ms ease-in-out;*/
 	animation: closeShade 500ms ease-in-out 0s 1 normal forwards running;
@@ -107,10 +109,18 @@ main {
 
 
 .content p {
-	font-size: 2em;
+	width: 100%;
+	font-size: 1.5em;
 	text-align: center;
-	margin: auto;
+	margin: 0;
 	font-family: Helvetica;
+}
+
+.image {
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	margin: auto;
 }
 
 .clicked {
@@ -118,6 +128,19 @@ main {
 	animation: openShade 300ms linear 0s 1 normal forwards running;
 	overflow: hidden;
 }
+
+/*.reappearImg {
+	animation: closeImgShade 300ms linear 0s 1 normal forwards running;
+}
+
+@keyframes closeImgShade {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100px;
+	}
+}*/
 
 @keyframes openShade {
 	from {
@@ -131,10 +154,10 @@ main {
 @keyframes closeShade {
 	from {
 		height: 0;
-		/*opacity: 0.4;*/
+		opacity: 0.4;
 	}
 	to {
 		height: 140px;
-		/*opacity: 1;*/
+		opacity: 1;
 	}
 }
