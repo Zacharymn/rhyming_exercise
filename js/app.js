@@ -7,9 +7,11 @@ const hiddenWords = document.querySelectorAll(".word_behind");
 frames.forEach((frame, index) => {
 	frame.addEventListener("click", (event) => {
 		covers[index].classList.toggle("clicked");
+		// covers[index].firstElementChild.classList.toggle(".clicked")
+		// console.log(covers[index].firstElementChild);
 		let rhymeIndex = Math.floor(index/4);
-		console.log(rhymeWords[rhymeIndex]);
-		console.log(hiddenWords[index]);
+		// console.log(rhymeWords[rhymeIndex]);
+		// console.log(hiddenWords[index]);
 			if(hiddenWords[index].textContent === rhymeWords[rhymeIndex].textContent) {
 				covers[index].parentElement.style.background = "#33FF33";
 			}else {covers[index].parentElement.style.background = "#FF3333";}
