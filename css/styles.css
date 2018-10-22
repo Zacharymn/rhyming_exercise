@@ -48,7 +48,7 @@ main {
 	background: #ccc;
 	border: 10px solid #0af;
 	border-radius: 8px;
-	box-shadow: -5px -5px 10px white;
+	box-shadow: -5px -5px 10px #999;
 
 	height: 25%;
 }
@@ -82,7 +82,7 @@ main {
 	margin: auto;
 	display: flex;
 	cursor: pointer;
-	box-shadow: -5px -5px 10px white;
+	box-shadow: -5px -5px 10px #999;
 
 }
 
