@@ -24,6 +24,3 @@ frames.forEach((frame, index) => {
 // 	console.log(word.textContent);
 // })
 
-// frames.forEach((frame) => {
-// 	console.log(frame);
-// })
