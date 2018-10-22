@@ -105,11 +105,6 @@ main {
 	animation: closeShade 500ms ease-in-out 0s 1 normal forwards running;
 }
 
-/*.word_to_rhyme {
-	text-align: center;
-	margin: auto;
-}*/
-
 
 .content p {
 	font-size: 2em;
