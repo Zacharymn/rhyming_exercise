@@ -1,0 +1,145 @@
+/*html {
+	height: 100%;
+}*/
+
+body {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	font-family: 'Butterfly Kids', cursive;
+}
+
+header {
+	height: 20vh;
+	text-align: center;
+    background: linear-gradient(to right, white,#0af,#42f4d9, #ccc, #42f4d9, #0af, white);
+	border: 5px solid #999;
+	display: flex;
+	font-size: 30px
+}
+
+h1 {
+	margin: auto;
+}
+
+main {
+/*	width: 90%;*/
+	height: 80%;
+	display: flex;
+	border: 5px solid #999;
+	background: repeating-linear-gradient(to right, pink,white,#0ff,white, #0ff, white,pink);
+
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1%;
+
+}
+
+.question {
+	display: flex;
+	margin: 2% auto;
+	width: 90%;
+	background: #ccc;
+	border: 10px solid #0af;
+	border-radius: 8px;
+	box-shadow: -5px -5px 10px white;
+
+	height: 25%;
+}
+
+.stuff {
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	width: 100%;
+
+}
+
+.rhyme {
+	display: flex;
+	width: 25%;
+	height: 30vh;
+	border-right: 10px solid #0af;
+}
+
+.answers {
+	display: flex;
+	width: 75%;
+}
+
+.frame {
+	border: 10px solid #0af;
+	border-radius: 8px;
+	background: #ccc;
+	width: 140px;
+	height: 140px;
+	margin: auto;
+	display: flex;
+	cursor: pointer;
+	box-shadow: -5px -5px 10px white;
+
+}
+
+.frame:active {
+	box-shadow: none;
+}
+
+/*.word_behind {
+	text-align: center;
+	margin: auto;
+}*/
+
+.cover {
+	width: 140px;
+	height: 140px;
+	background: #42f4d9;
+	display: flex;
+	position: absolute;
+	/*transition: transform 300ms ease-in-out;*/
+	animation: closeShade 500ms ease-in-out 0s 1 normal forwards running;
+}
+
+/*.word_to_rhyme {
+	text-align: center;
+	margin: auto;
+}*/
+
+
+.content p {
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-family: Helvetica;
+}
+
+.clicked {
+	/*transform: translate(0, -190px);*/
+	animation: openShade 300ms linear 0s 1 normal forwards running;
+	overflow: hidden;
+}
+
+@keyframes openShade {
+	from {
+		/*height: 180px;*/
+	}
+	to {
+		height: 0;
+	}
+}
+
+@keyframes closeShade {
+	from {
+		height: 0;
+		/*opacity: 0.4;*/
+	}
+	to {
+		height: 140px;
+		/*opacity: 1;*/
+	}
+}
